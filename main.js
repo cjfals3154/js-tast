@@ -1,3 +1,65 @@
+//함수 복습
+//매개 변수
+function sum(){
+  console.log(arguments)
+  return
+}
+
+console.log(sum(7,3))
+
+
+
+
+
+
+
+
+
+
+//인수
+// sum(1, 3)
+// sum(5, 16)
+
+
+//함수 복습
+// function sum(x, y){
+//   return x+y
+// }
+
+// const a = sum(1, 3)
+// const b = sum(5, 16)
+
+// sum(1, 3)
+// sum(5, 16)
+// console.log(a)
+// console.log(b)
+// console.log(a+b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //반복문
 // for (시작조건; 종료조건; 변화조건){}
 
