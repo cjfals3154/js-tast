@@ -1,8 +1,28 @@
-const user = {
-  name: 'shin',
-  age: 21,
+import _ from 'lodash'
 
-}
+const usersA = [
+  {userId: '1', name: 'shin'},
+  {userId: '2', name: 'Neo'}
+]
+const usersB = [
+  {userId: '1', name: 'shin'},
+  {userId: '3', name: 'Amy'}
+]
+const usersC = usersA.concat(usersB)
+console.log('concat', usersC)
+console.log('uniqBy', _.uniqBy(usersC, 'userId'))
+
+const usersD = _.unionBy(usersA, usersB, 'userId')
+console.log('unionBy', usersD)
+
+
+// import Type from './getType'
+// import {random} from './getRandom'
+// import {user as king} from './getRandom'
+// import * as R from './getRandom'
+// console.log(Type([1, 2, 3]))
+// console.log(random())
+// console.log(R)  
 
 //배열
 // .length (배열에 아이템의 개수를 출력)
